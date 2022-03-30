@@ -1,0 +1,192 @@
+
+/* COLOR PALLET 
+https://coolors.co/fffbfe-202c39-84dcc6-ff686b-c78283
+#005F73 - Blue Sapphire
+A4BBC2 - light blue
+BB3E03 - Rust
+9B2226 - Ruby Red
+E9D8A6 - Medium Champagne
+0A9396 - Viridian Green  rgb(10, 147, 150)
+*/
+
+/* GLOBAL STYLES
+-------------------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after 
+{
+    box-sizing: inherit;
+}
+body {
+    color: #005F73;
+    margin: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;  
+ }
+img{
+  width: 300px;  
+}
+a {
+    color: #E9D8A6;
+}
+a:hover {
+    text-decoration: none;
+}
+h1 {
+    font-size: 75px;
+    line-height: 1;
+}
+h2 {
+    margin: 0;
+    font-size: 35px;
+}
+h1 {
+    font-family: 'Hurricane', cursive;
+    margin: 0;
+}
+.content-wrap {
+    max-width: 1000px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+h3 {
+    margin-bottom: 0;
+}
+.item-details h3 + p {
+    font-style: italic;
+}
+.item-details h3 ~ p {
+    margin: 0;
+}
+.divider > section {
+    border-bottom: 1px solid #005F73;
+    padding: 25px 0;
+}
+.divider > section:last-of-type {
+    border-bottom: none;
+}
+/* PROFILE
+--------------------------------*/
+header {
+    background: #005F73;
+    color: #A4BBC2;
+}
+
+/* PROJECTS
+--------------------------------*/
+.projects {
+    background: #A4BBC2;
+}
+.projects a {
+    color: #E9D8A6;
+}
+.projects .btn {
+    color: #E9D8A6;
+    background: #005F73;
+    text-decoration: none;
+    padding: 1px;
+    border-radius: 3px;
+    display: inline-block;
+}
+.projects .btn:hover {
+    background: rgba(10, 147, 150, 60%);
+}
+.project-item {
+    overflow: hidden;
+}
+.project-item h3 {
+    margin-top: 0;
+}
+
+/* WORK-EXPERIENCE
+--------------------------------*/
+.work-experience {
+    background: #A4BBC2;
+}
+.work-experience a {
+    color: #E9D8A6;
+}
+.work-experience .btn {
+    color: #E9D8A6;
+    background: #005F73;
+    text-decoration: none;
+    padding: 1px;
+    border-radius: 3px;
+}
+.work-experience .btn:hover {
+    background: rgba(10, 147, 150, 60%);
+}
+
+/* EDUCATION
+--------------------------------*/
+.education {
+    background-image: url("../CSS Images/booksstacked.jpg");
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
+}
+.education p {
+    width: 60%;
+}
+
+/* CONTACT
+--------------------------------*/
+
+footer{ 
+    background: #005F73;
+    color: #A4BBC2;
+}
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+.contact-list a {
+    padding: 15;
+    display: inline-block;
+}
+footer a {
+    color: #E9D8A6;
+}
+footer a:hover {
+    text-decoration: none;
+}
+/* RESPONSIVE STYLES
+--------------------------------*/
+@media screen and (min-width:650px){
+    header, footer {
+        text-align: center;
+    }
+    .project-item img {
+        float: left;
+        margin-right: 40px;
+    }
+    .job.item {
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:649px){
+    h1 {
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+    h2 {
+        line-height: 1;
+    }
+    .contact-list a {
+         padding: 5px;
+    }
+}
